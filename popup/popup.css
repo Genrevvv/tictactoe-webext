@@ -1,0 +1,61 @@
+:root {
+    --main-bg: #000025;
+    --font-color: #ffffff;
+    
+    --button-bg: #0f0f24;
+}
+
+html body {
+    background-color: var(--main-bg);
+    color: var(--font-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 250px;
+    height: 250px;
+    margin: 0;
+
+    border: 1px solid black;
+}
+
+.popup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.popup-container h1 {
+    font-size: 40px;
+    text-shadow: 0px 0px 10px #64e8ff;
+    margin-top: 0;
+}
+
+.option-buttons {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+.option-buttons button {
+    background-color: var(--button-bg);
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--font-color);
+    text-shadow: 0px 0px 10px #64e8ff;
+
+
+    border: 1px solid white;
+
+    padding: 5px 10px;
+}
+
+.option-buttons button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #ffffff;;
+}

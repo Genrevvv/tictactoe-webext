@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Tic-Tac-Toe",
+    "version": "1.0",
+    "description": "A Tic-Tac-Toe GUI extension",
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+    "permissions": ["activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "css": ["tictactoe.css"],
+            "js": ["tictactoe.js"]
+        }
+    ]
+}
